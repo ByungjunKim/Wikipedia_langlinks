@@ -1,4 +1,6 @@
 cd resources/wikipedia-parallel-titles
+# cd ~/data/Databases
+
 # bash build-corpus.sh en kowiki-20200301  > ko-en.txt #한-영
 bash build-corpus.sh ko enwiki-20200301  > en-ko.txt # 영-한국어
 bash build-corpus.sh de enwiki-20200301  > en-de.txt # 영-독일어
