@@ -13,6 +13,8 @@ bash build-corpus.sh pt enwiki-20200301  > en-pt.txt # 영-포르투갈어
 bash build-corpus.sh ru enwiki-20200301  > en-ru.txt # 영-러시아어
 bash build-corpus.sh vi enwiki-20200301  > en-vi.txt # 영-베트남
 bash build-corpus.sh zh enwiki-20200301  > en-zh.txt # 영-중국어
+bash build-corpus.sh zh enwiki-20200301  > en-nl.txt # 영-네덜란드어
+
 
 # python create_index.py --output_folder="output" --input_path="en-ko.txt" --from_lang_to_lang="ko---en" --verbose=2
 python create_index.py --output_folder="output" --input_path="en-ko.txt" --from_lang_to_lang="en---ko" --verbose=2
@@ -26,5 +28,6 @@ python create_index.py --output_folder="output" --input_path="en-pt.txt" --from_
 python create_index.py --output_folder="output" --input_path="en-ru.txt" --from_lang_to_lang="en---ru" --verbose=2
 python create_index.py --output_folder="output" --input_path="en-vi.txt" --from_lang_to_lang="en---vi" --verbose=2
 python create_index.py --output_folder="output" --input_path="en-zh.txt" --from_lang_to_lang="en---zh" --verbose=2
+python create_index.py --output_folder="output" --input_path="en-nl.txt" --from_lang_to_lang="en---nl" --verbose=2
 
 python merge_indices.py --input_folder='output' --verbose="2"
